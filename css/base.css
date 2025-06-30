@@ -63,24 +63,7 @@ ol {
     --color-accent: #B388EB;
     --color-danger: #E57373;
 
-    --trans-switch: background .2s ease-in, color .2s ease-in-out;
-}
-
-.dark-theme {
-    --color-primary: #43A3A8;
-    --color-primary-darked: #2b7d80;
-
-    --color-secondary: #E6A950;
-    --color-secondary-darked: #b57820;
-
-    --color-background: #121415;
-    --color-text: #E0E4E7;
-
-    --color-muted: #A1A5AA;
-    --color-neutral: #2A2D2F;
-
-    --color-accent: #9b7ede;
-    --color-danger: #E57373;
+    --trans-switch: background .3s ease-in, color .3s ease-in-out;
 }
 
 /**** Base Style ****/
