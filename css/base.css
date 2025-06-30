@@ -1,0 +1,111 @@
+/**** Fonts ****/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/**** Preset ****/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/**** Variables ****/
+:root {
+    --font-title: "Merriweather Sans", sans-serif;
+    --font-body: "Work Sans", sans-serif;
+
+    --xxs: .4rem;
+    --xs: .6rem;
+    --s: 1rem;
+    --m: 1.6rem;
+    --l: 2rem;
+    --xl: 2.6rem;
+    --xxl: 3.4rem;
+    --xxxl: 3.8rem;
+
+    --bar-xs: 3rem;
+    --bar-s: 5rem;
+    --bar-m: 7rem;
+    --bar-l: 9rem;
+
+    --color-primary: #43A3A8;
+    --color-primary-darked: #2b7d80;
+
+    --color-secondary: #F8C471;
+    --color-secondary-darked: #d99d3f;
+
+    --color-background: #FFFFFF;
+    --color-text: #2F2F2F;
+
+    --color-muted: #6B6B6B;
+    --color-neutral: #E0E4E7;
+
+    --color-accent: #B388EB;
+    --color-danger: #E57373;
+
+    --trans-switch: background .2s ease-in, color .2s ease-in-out;
+}
+
+.dark-theme {
+    --color-primary: #43A3A8;
+    --color-primary-darked: #2b7d80;
+
+    --color-secondary: #E6A950;
+    --color-secondary-darked: #b57820;
+
+    --color-background: #121415;
+    --color-text: #E0E4E7;
+
+    --color-muted: #A1A5AA;
+    --color-neutral: #2A2D2F;
+
+    --color-accent: #9b7ede;
+    --color-danger: #E57373;
+}
+
+/**** Base Style ****/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: var(--m);
+    transition: var(--trans-switch);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-title);
+}
+
+h1 {
+    font-size: var(--xxl);
+}
+
+h2 {
+    font-size: var(--xl);
+}
+
+h3 {
+    font-size: var(--l);
+}
