@@ -23,6 +23,11 @@ body {
 
 .btn.stroke {
     border: .2rem solid var(--color-text);
+    transition: border .2s ease-in, color .2s ease-in;
+}
+.btn.stroke:hover{
+    color: var(--color-primary);
+    border-color: var(--color-primary);
 }
 
 /**** Header ****/
@@ -277,4 +282,89 @@ footer .wrapper{
 .footer-bottom{
     text-align: center;
     padding: var(--m) 0;
+}
+
+/******* BLOG *******/
+.blog-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.post-cover{
+    height: 60rem;
+}
+.post-cover_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+}
+.post-content hr{
+    margin: 1rem 0;
+}
+.post-category{
+    background-color: var(--color-neutral);
+    padding: .4rem .5rem;
+    border-radius: .4rem;
+}
+.article-title{
+    margin: 2.4rem 0;
+}
+.article-text{
+    margin: 1.5rem 0;
+}
+
+.pre-footer{
+    background-color: var(--color-neutral);
+}
+.pre-footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+}
+.pre-section{
+    display: flex;
+    height: 15rem;
+    align-items: center;
+    gap: 2rem;
+}
+.pre-section img{
+    height: 70%;
+    width:  auto;
+}
+.pre-section a{
+    font-weight: 600;
+    padding: .2rem 0;
+    border-bottom: .3rem solid var(--color-text);
+}
+.pre-section p{
+    padding: 1rem 0;
+}
+
+/****** Contacto ******/
+.profile_img{
+    margin: 0 auto;
+    max-width: 80%;
+    border-radius: 50%;
+}
+.new.profile{
+    align-items: center;
+}
+/** proyecto **/
+.projects-container h2{
+    text-align: center;
+    padding: 1rem 0 3rem;
+    border-bottom: 2px solid var(--color-neutral);
+}
+.projects{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 4rem;
+}
+.project_img{
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem gray;
+    margin: 1rem 0;
 }
