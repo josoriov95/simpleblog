@@ -72,19 +72,35 @@ header .header-social {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: var(--s) var(--xxxl);
+    gap: var(--m);
 }
 
 /* logo */
 .logo img {
     filter: invert(54%) sepia(200%) saturate(500%) hue-rotate(140deg);
-    width: 35rem;
+    width: 30rem;
+    max-width: 100%;
     height: auto;
     transition: filter .3s ease-in-out;
 }
 
 .logo img:hover {
     filter: invert(54%) sepia(200%) saturate(900%) hue-rotate(140deg);
+}
+
+@media (max-width: 470px){
+    header{
+        height: auto;
+    }
+    header .header-social{
+        justify-content: center;
+    }
+    header .header-bar{
+        justify-content: center;
+        padding-bottom: var(--l);
+    }
 }
 
 /* nav */
@@ -179,9 +195,16 @@ header .header-social {
     display: flex;
     gap: var(--xxxl);
 }
-
+@media(max-width: 680px){
+    .new{
+        flex-direction: column;
+    }
+    img.new_img{
+        width: 100%;
+    }
+}
 .new_img {
-    max-width: 55%;
+    width: 55%;
     object-fit: cover;
 }
 
