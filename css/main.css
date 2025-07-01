@@ -1,6 +1,6 @@
 /****** GLOBAL ******/
 body {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -23,11 +23,6 @@ body {
 
 .btn.stroke {
     border: .2rem solid var(--color-text);
-    transition:color .3s ease-in, border .3s ease-in;
-}
-.btn.stroke:hover{
-    color: var(--color-primary-darked);
-    border-color: var(--color-primary-darked);
 }
 
 /**** Header ****/
@@ -271,18 +266,15 @@ header .header-social {
 footer{
     background-color: var(--color-text);
     color: var(--color-background);
-    justify-content: space-between;
-}
-.footer-top{
-    background-color: var(--color-primary);
 }
 footer .wrapper{
     padding-top: var(--m);
     padding-bottom: var(--m);
 }
+.footer-top{
+    background-color: var(--color-primary);
+}
 .footer-bottom{
     text-align: center;
-    height: var(--bar-l);
-    display: flex;
-    align-items: center;
+    padding: var(--m) 0;
 }
